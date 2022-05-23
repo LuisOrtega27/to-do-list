@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.wrapper{
+    /* padding-top: 20px; */
+    height: 100%;
+    width: 100%;
+    background-color: #eee;
+}
+
+.title{
+    text-decoration: underline #28e;
+    text-align: center;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px #0005;
+}
+#search-area{
+    height: fit-content;
+    /* margin-top: 20px; */
+    text-align: center;
+    padding: 20px;
+    border-bottom: solid 2px #000;
+    background-color: #fff;
+    /* box-shadow: 0px 0px 10px #0005; */
+
+}
+#search-input{
+    padding: 10px;
+    width: 350px;
+}
+
+#add-new{
+    height: 40px;
+    width: 40px;
+    margin-left: 50px;
+    color: #fff;
+    font-size: 2.5em;
+    background-color: #2e2;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px #0005;
+}
+#list-area{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    height: 100%;
+    padding: 20px 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px #0005;
+}
+
+.list{
+    height: 350px;
+    padding: 5px;
+    border-radius: 10px;
+    overflow-y: auto;
+    list-style: none;
+    box-shadow: 0px 0px 5px #0005;
+}
+.stand-by{
+    background-color: #2e22;
+}
+.on-work{
+    background-color: #ee22;
+}
+.finished{
+    background-color: #e222;
+}
+
+.list-title{
+    padding: 10px;
+}
+
+
+.list-item{
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    gap: 5px;
+    padding: 8px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #0005;
+    cursor:grab;
+}
+.list-item:active{
+    cursor:grabbing;
+}
+
+
+.list-item h4{
+    padding: 5px;
+    overflow: hidden;
+    height: 24px;
+    background-color: #eee;
+    border-radius: 5px;
+}
+
+.list-item-btn{
+    font-weight: 600;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.edit-btn{
+    color: hsl(125, 73%, 50%);
+}
+.delete-btn{
+    color: hsl(0, 73%, 50%);
+}
